@@ -1,0 +1,10 @@
+const express = require("express");
+const homepage = require("../controllers/homepage");
+const about = require("../controllers/aboutControllers");
+const dashboard = require("../controllers/dashboardControllers");
+const auth = require("./auth");
+const routes = express.Router();
+routes.get("/", homepage);
+routes.get("/about", about);
+routes.get("/dashboard", dashboard);
+module.exports = routes;
