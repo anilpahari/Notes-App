@@ -4,11 +4,10 @@
   >
     <a
       href="/"
-      class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-primary text-decoration-none fs-1"
+      class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-primary text-decoration-none fw-bold fs-2"
     >
-      <!-- <i class="fa-regular fa-note-sticky"></i> -->
       <img
-        src="../image/note-svgrepo-com.svg"
+        src="/image/note-svgrepo-com.svg"
         alt="hello"
         style="height: 50px; width: 50px"
         class="mt-0"
@@ -18,21 +17,20 @@
     <form
       class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0"
       role="search"
+      method="POST"
       action="/dashboard/search"
-      method="post"
     >
       <input
         type="search"
         name="searchTerm"
         class="form-control border-primary"
-        placeholder="Search....."
+        placeholder="Search..."
+        aria-label="Search"
       />
     </form>
 
     <div class="col-md-3 text-end">
-      <a href="/logout" type="button" class="btn btn-outline-primary"
-        >Log out</a
-      >
+      <a href="/logout" type="button" class="btn btn-outline-primary">Logout</a>
     </div>
   </header>
 </div>
